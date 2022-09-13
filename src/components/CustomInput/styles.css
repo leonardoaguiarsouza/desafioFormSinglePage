@@ -1,0 +1,23 @@
+.container label {
+    color: #767676;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container input {
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    color: #767676;
+    padding: 12px 11px 11px;
+}
+
+.container:nth-child(even) {
+    max-width: 162px;
+    margin-left: 24px;
+}

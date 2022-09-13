@@ -1,0 +1,28 @@
+.logo {
+    margin-top: 0;
+    background: red;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box {
+    width: 620px;
+    height: 763px;
+    padding-left: 33px;
+    padding-right: 71px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 200px;
+}
+
+.inputGroup {
+    display: flex;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+}
