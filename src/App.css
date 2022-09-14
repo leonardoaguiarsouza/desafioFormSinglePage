@@ -37,7 +37,6 @@ form {
     justify-content: space-between;
 }
 
-
 .buttonGroup {
     width: 100%;
     display: flex;
@@ -71,4 +70,46 @@ input[type="checkbox"] {
     width: 20px;
     height: 20px;
     accent-color: #0DBDBD;
+}
+
+@media (max-width: 992px) {
+    .box {
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 23px;
+        border-radius: 0;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .fields {
+        justify-content: space-evenly;
+    }
+
+    .inputGroup {
+        flex-wrap: wrap;
+    }
+
+    .inputGroup:nth-last-child(2) > div:last-child {
+        margin-top: 10%;
+    }
+
+    .inputGroup:last-child > div {
+        max-width: 49%;
+    }
+
+    .buttons {
+        flex-grow: 0.1;
+    }
+
+    .buttonGroup {
+        height: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .buttonGroup > button {
+        width: 100%;
+        height: 56px;
+    }
 }

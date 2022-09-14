@@ -7,18 +7,6 @@
     /* padding-top: 60px; */
 }
 
-.container:nth-child(odd) {
-    max-width: 330px;
-}
-
-.container:nth-child(even) {
-    max-width: 162px;
-}
-
-.container:only-child {
-    max-width: 100%;
-}
-
 .container > label {
     color: #767676;
     font-size: calc(1rem - 2px);
@@ -35,4 +23,19 @@
     font-size: 1rem;
     line-height: 18px;
     padding: 12px 11px 11px;
+}
+
+@media (min-width: 992px) {
+    .container:nth-child(odd) {
+        max-width: 330px;
+    }
+    
+    .container:nth-child(even) {
+        max-width: 162px;
+    }
+    
+    .container:only-child {
+        max-width: 100%;
+    }
+
 }
