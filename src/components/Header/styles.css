@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header strong {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    line-height: 24px;
+    color: #111111;
+}

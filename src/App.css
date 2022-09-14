@@ -1,28 +1,74 @@
-.logo {
-    margin-top: 0;
-    background: red;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
 .box {
-    width: 620px;
+    max-width: 620px;
     height: 763px;
     padding-left: 33px;
     padding-right: 71px;
+    padding-bottom: 65px;
     background: #FFFFFF;
     border-radius: 20px;
     margin: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.5;
+    justify-content: space-around;
+
+}
+
+.buttons {
+    display: flex;
+    flex-grow: 0.5;
 }
 
 .inputGroup {
     display: flex;
+    justify-content: space-between;
 }
 
+
 .buttonGroup {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    line-height: 18px;
+    align-self: flex-end;
+}
+
+.buttonGroup > label {
+    display: flex;
+}
+
+.buttonGroup > button {
+    cursor: pointer;
+    padding: 0px 12px;
+    width: 81px;
+    height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    background: #0DBDBD;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    accent-color: #0DBDBD;
 }
