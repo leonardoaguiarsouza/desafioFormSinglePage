@@ -25,15 +25,39 @@
     padding: 12px 11px 11px;
 }
 
+.container .checkbox {
+    display: flex;
+    font-size: 16px;
+    line-height: 18px;
+    color: #111111;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    accent-color: #0DBDBD;
+}
+
+.container .invalid {
+    display: block;
+    padding-top: 7px;
+    color: #FF4B4B;
+}
+
+.container .valid {
+    display: none;
+}
+
 @media (min-width: 992px) {
     .container:nth-child(odd) {
         max-width: 330px;
     }
-    
+
     .container:nth-child(even) {
         max-width: 162px;
     }
-    
+
     .container:only-child {
         max-width: 100%;
     }
