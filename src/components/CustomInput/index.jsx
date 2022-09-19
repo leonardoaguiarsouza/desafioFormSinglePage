@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
+import InputMask from 'react-input-mask';
 
 import './styles.css'
 
-const CustomInput = ( {label, type, required, placeholder, validate, handleChange} ) => {
+const CustomInput = ( {value, label, type, required, mask, placeholder, validate, handleChange} ) => {
   const [toggleInvalidLabel, setToggleInvalidLabel] = useState('');
 
   useEffect(() => {
@@ -21,7 +22,7 @@ const CustomInput = ( {label, type, required, placeholder, validate, handleChang
   return (
     <div className="container">
         <label>{label} {required ? '*' : ''}</label>
-        <input type={type} placeholder={placeholder} onChange={ e => handleChange(e.target.value) } />
+        <InputMask value={value} type={type} mask={mask} placeholder={placeholder} onChange={ e => handleChange(e.target.value) } />
         <div className="error"><label className={toggleInvalidLabel}>{validate.text}</label></div>
     </div>
   )

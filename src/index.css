@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 992px) {
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
     body {
-        display: flex;
-        justify-content: center;
         background: #F5F5F5;
     }
 }

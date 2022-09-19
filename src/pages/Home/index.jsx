@@ -9,11 +9,11 @@ import { useNavigate } from 'react-router-dom'
 const Home = () => {
     const navigate = useNavigate();
 
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [phone, setPhone] = useState();
-    const [password, setPassword] = useState();
-    const [birthday, setBirthday] = useState();
+    const [name, setName] = useState(localStorage.getItem('name') ?? '');
+    const [email, setEmail] = useState(localStorage.getItem('email') ?? '');
+    const [phone, setPhone] = useState(localStorage.getItem('phone') ?? '');
+    const [password, setPassword] = useState("");
+    const [birthday, setBirthday] = useState(localStorage.getItem('birthday') ?? '');
     const [termsAccepted, setTermsAccepted] = useState(false);
 
     const [isNameValid, setIsNameValid] = useState();
@@ -39,7 +39,7 @@ const Home = () => {
 
         setIsNameValid(nameRegex.test(name));
         setIsEmailValid(emailRegex.test(email));
-        setIsPhoneValid(phoneRegex.test(phone));
+        setIsPhoneValid(phoneRegex.test(phone.replace(/[^\d]/g, ''))); // pega o valor do campo sem a mask
         setIsPasswordValid(passwordRegex.test(password));
         setIsBirthdayValid(dateValidation(birthday));
         setAreTermsAccepted(termsAccepted);
@@ -54,7 +54,11 @@ const Home = () => {
             isBirthdayValid === true &&
             areTermsAccepted === true
         ) {
-            navigate("/sucess");
+            localStorage.removeItem('name');
+            localStorage.removeItem('email');
+            localStorage.removeItem('phone');
+            localStorage.removeItem('birthday');
+            navigate("/sucess", {state: true});
         }
     }, [
         isNameValid,
@@ -63,6 +67,18 @@ const Home = () => {
         isPasswordValid,
         isBirthdayValid,
         areTermsAccepted
+    ]);
+
+    useEffect(() => {
+        localStorage.setItem('name', name);
+        localStorage.setItem('email', email);
+        localStorage.setItem('phone', phone);
+        localStorage.setItem('birthday', birthday);
+    }, [
+        name,
+        email,
+        phone,
+        birthday,
     ]);
 
     return (
@@ -74,15 +90,15 @@ const Home = () => {
 
                 <div className="fields">
                     <div className="inputGroup">
-                        <CustomInput type="text" label="Full Name" required={true} placeholder="Name" validate={{ text: "Fullname Invalid", handler: isNameValid }} handleChange={setName} />
+                        <CustomInput type="text" value={name} label="Full Name" required={true} placeholder="Name" validate={{ text: "Fullname Invalid", handler: isNameValid }} handleChange={setName} />
                     </div>
                     <div className="inputGroup">
-                        <CustomInput type="email" label="Email" required={true} placeholder="foo@bar.com" validate={{ text: "Email Invalid", handler: isEmailValid }} handleChange={setEmail} />
-                        <CustomInput type="number" label="Phone" required={false} placeholder="(83) 00000-0000" validate={{ text: "Phone Invalid", handler: isPhoneValid }} handleChange={setPhone} />
+                        <CustomInput type="email" value={email} label="Email" required={true} placeholder="foo@bar.com" validate={{ text: "Email Invalid", handler: isEmailValid }} handleChange={setEmail} />
+                        <CustomInput type="text" value={phone} label="Phone" mask="(99) 9 9999-9999" required={false} placeholder="(83) 00000-0000" validate={{ text: "Phone Invalid", handler: isPhoneValid }} handleChange={setPhone} />
                     </div>
                     <div className="inputGroup">
                         <CustomInput type="password" label="Password" required={true} placeholder="Enter your password" validate={{ text: "Password Invalid", handler: isPasswordValid }} handleChange={setPassword} />
-                        <CustomInput type="date" label="Birthday" required={true} validate={{ text: "Age Invalid", handler: isBirthdayValid }} handleChange={setBirthday} />
+                        <CustomInput type="date" value={birthday} label="Birthday" required={true} validate={{ text: "Age Invalid", handler: isBirthdayValid }} handleChange={setBirthday} />
                     </div>
                 </div>
                 <div className="buttons">
