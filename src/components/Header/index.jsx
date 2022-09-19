@@ -1,10 +1,10 @@
 import './styles.css'
 
-function Header() {
+function Header( props ) {
   return (
     <div className="header">
         <img src="../../src/assets/black_logo.png"></img>
-        <strong>Intern Sign Up</strong>
+        {props.children}
     </div>
   )
 }

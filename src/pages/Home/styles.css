@@ -1,22 +1,12 @@
-.box {
-    max-width: 620px;
-    height: 763px;
-    padding-left: 33px;
-    padding-right: 71px;
-    padding-bottom: 65px;
-    background: #FFFFFF;
-    border-radius: 20px;
-    margin: 200px;
-    display: flex;
-    flex-direction: column;
-}
-
 form {
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 33px;
+    padding-right: 71px;
+    padding-bottom: 65px;
 }
 
 .fields {
@@ -60,13 +50,9 @@ form {
 }
 
 @media (max-width: 992px) {
-    .box {
-        margin: 0;
+    form {
         padding-left: 20px;
         padding-right: 23px;
-        border-radius: 0;
-        max-width: 100%;
-        height: 100vh;
     }
 
     .fields {

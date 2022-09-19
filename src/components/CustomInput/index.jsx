@@ -6,7 +6,7 @@ function CustomInput( props ) {
   const [toggleInvalidLabel, setToggleInvalidLabel] = useState('');
 
   useEffect(() => {
-      setToggleInvalidLabel(props.validate.handler ? 'invalid' : 'valid');
+      setToggleInvalidLabel(props.validate.handler === false ? 'invalid' : 'valid');
   }, [props.validate.handler]);
 
   if (props.type == "checkbox") {
@@ -21,7 +21,7 @@ function CustomInput( props ) {
   return (
     <div className="container">
         <label>{props.label} {props.required ? '*' : ''}</label>
-        <input type={props.type} placeholder={props.placeholder} required={props.required} onChange={ e => props.handleChange(e.target.value) } />
+        <input type={props.type} placeholder={props.placeholder} onChange={ e => props.handleChange(e.target.value) } />
         <label className={toggleInvalidLabel}>{props.validate.text}</label>
     </div>
   )
