@@ -1,11 +1,11 @@
 import './styles.css'
 
-function Box( props ) {
+const Box = ( element ) => {
   return (
     <div className="box">
-        {props.children}
+        {element.children}
     </div>
   )
-}
+};
 
 export default Box

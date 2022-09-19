@@ -39,14 +39,21 @@ input[type="checkbox"] {
     accent-color: #0DBDBD;
 }
 
-.container .invalid {
-    display: block;
+.container .error {
     padding-top: 7px;
+    height: 16px;
+}
+
+.container .error > label {
+    font-size: 14px;
+}
+
+.container .invalid {
     color: #FF4B4B;
 }
 
 .container .valid {
-    display: none;
+    color: white;
 }
 
 @media (min-width: 992px) {

@@ -4,8 +4,11 @@ import './styles.css'
 import Box from '../../components/Box'
 import CustomInput from '../../components/CustomInput'
 import Header from '../../components/Header'
+import { useNavigate } from 'react-router-dom'
 
-function Home() {
+const Home = () => {
+    const navigate = useNavigate();
+
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [phone, setPhone] = useState();
@@ -25,13 +28,13 @@ function Home() {
     const passwordRegex = new RegExp("^\\d{6,9}$");
     const phoneRegex = new RegExp("^\\d{11,11}$");
 
-    function dateValidation(birthdayDate) {
+    const dateValidation = (birthdayDate) => {
         let currentDate = new Date();
 
         return Math.abs(new Date(birthdayDate).getFullYear() - currentDate.getFullYear()) < 121 ?? false;
     }
 
-    function handleSubmit(e) {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
         setIsNameValid(nameRegex.test(name));
@@ -51,7 +54,7 @@ function Home() {
             isBirthdayValid === true &&
             areTermsAccepted === true
         ) {
-            document.querySelector("form").submit();
+            navigate("/sucess");
         }
     }, [
         isNameValid,
@@ -64,7 +67,7 @@ function Home() {
 
     return (
         <Box>
-            <form action="/sucess" method="GET" onSubmit={e => handleSubmit(e)}>
+            <form onSubmit={e => handleSubmit(e)}>
                 <Header>
                     <strong>Intern Sign Up</strong>
                 </Header>
