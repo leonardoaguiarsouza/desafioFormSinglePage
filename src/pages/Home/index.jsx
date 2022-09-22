@@ -58,7 +58,7 @@ const Home = () => {
             localStorage.removeItem('email');
             localStorage.removeItem('phone');
             localStorage.removeItem('birthday');
-            navigate("/sucess", {state: true});
+            navigate("/success", {state: true});
         }
     }, [
         isNameValid,
