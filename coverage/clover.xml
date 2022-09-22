@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1663856709940" clover="3.2.0">
+  <project timestamp="1663856709940" name="All files">
+    <metrics statements="105" coveredstatements="6" conditionals="32" coveredconditionals="3" methods="27" coveredmethods="2" elements="164" coveredelements="11" complexity="0" loc="105" ncloc="105" packages="9" files="15" classes="15"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="App.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/App.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="main.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/main.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Box">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/components/Box/index.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.CustomInput">
+      <metrics statements="9" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="2"/>
+      <file name="index.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/components/CustomInput/index.jsx">
+        <metrics statements="9" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Header">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/components/Header/index.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.Home">
+      <metrics statements="43" coveredstatements="0" conditionals="18" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="index.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/pages/Home/index.jsx">
+        <metrics statements="43" coveredstatements="0" conditionals="18" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.Sucess">
+      <metrics statements="7" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/pages/Sucess/index.jsx">
+        <metrics statements="7" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages._401">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/pages/_401/index.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages._404">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/pages/_404/index.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.stories">
+      <metrics statements="36" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <file name="Button.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/stories/Button.jsx">
+        <metrics statements="5" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+      </file>
+      <file name="Button.stories.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/stories/Button.stories.jsx">
+        <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+      </file>
+      <file name="Header.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/stories/Header.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+      </file>
+      <file name="Header.stories.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/stories/Header.stories.jsx">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+      <file name="Page.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/stories/Page.jsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="Page.stories.jsx" path="/home/leonardo.aguiar/Documentos/Projetos/Estudos/React/desafioFormSinglePage/src/stories/Page.stories.jsx">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

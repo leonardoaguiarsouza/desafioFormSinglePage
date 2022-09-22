@@ -1,0 +1,21 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import CustomInput from '.';
+
+<Meta title="Components/CustomInput" />
+
+# CustomInput
+
+<ArgsTable of={CustomInput} />
+
+
+<Canvas>
+    <Story
+        name="CustomInput Component"
+        args={{
+            ...CustomInput.defaultProps,
+            label: "Teste"
+        }}
+    >
+        {(args) => <CustomInput {...args} />}
+    </Story>
+</Canvas>

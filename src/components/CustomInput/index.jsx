@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import InputMask from 'react-input-mask';
+import { PropTypes } from 'prop-types';
 
 import './styles.css'
 
@@ -29,3 +30,24 @@ const CustomInput = ( {value, label, type, required, mask, placeholder, validate
 };
 
 export default CustomInput
+
+CustomInput.propTypes = {
+    value: PropTypes.string,
+    label: PropTypes.string,
+    type: PropTypes.string,
+    required: PropTypes.bool,
+    mask: PropTypes.string,
+    placeholder: PropTypes.string,
+    validate: PropTypes.object,
+    handleChange: PropTypes.func
+}
+
+CustomInput.defaultProps = {
+    label: 'Input label',
+    type: 'text',
+    required: false,
+    validate: {
+        text: 'Field Invalid',
+        handler: null
+    }
+}

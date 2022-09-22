@@ -9,7 +9,7 @@ function App() {
     return (
         <Routes>
             <Route index element={<Home />}></Route>
-            <Route exact path='/sucess' element={<Sucess />}></Route>
+            <Route exact path='/success' element={<Sucess />}></Route>
             <Route exact path='/401' element={<_401 />}></Route>
             <Route exact path='*' element={<_404 />}></Route>
         </Routes>

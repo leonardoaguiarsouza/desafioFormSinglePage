@@ -4,7 +4,7 @@
     flex-direction: column;
     flex-grow: 1;
     font-size: 16px;
-    /* padding-top: 60px; */
+    font-family: 'Nunito', sans-serif;
 }
 
 .container > label {
